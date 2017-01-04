@@ -4,10 +4,10 @@
 - Thank you.
 
 You can help by contributing via,
- * [Pay via Debit Card / Credit Card / Netbanking](https://instamojo.com/@GetWellGudiya)
- * Pay via UPI (GetWellGudiya@ybl)
- * Pay via PayTM ()
- * Pay via NEFT or IMPS
- 	* Account Number : 11480100206359
- 	* IFS Code       : FDRL0001148
- 	* Name           : 
+	* [Pay via Debit Card / Credit Card / Netbanking](https://instamojo.com/@GetWellGudiya)
+	* Pay via UPI (GetWellGudiya@ybl)
+	* Pay via PayTM ()
+	* Pay via NEFT or IMPS
+ 		* Account Number : 11480100206359
+ 		* IFS Code       : FDRL0001148
+ 		* Name           : 
