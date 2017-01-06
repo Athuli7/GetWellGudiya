@@ -7,12 +7,15 @@ $('#myTabs a').click(function (e) {
 $.ajax({
 	url: "stats.json",
 	success: function( result ) {
+		result.hours = (now()-result.eventTime)/3600;
 		result.percent = result.collectedAmount/result.totalAmount*100;
 		result.percent = result.percent.toFixed(2);
-
-		var template = $('#render1').html();
-		var rendered = Mustache.render(template, {data:result});
-		console.log(rendered);
-		$('#render1').html(rendered);
+		var ttR = ['#render1']
+		for(var ttr in ttR){
+			var template = $(ttr).html();
+			var rendered = Mustache.render(template, {data:result});
+			console.log(rendered);
+			$(ttr).html(rendered);
+		}
 	}
 });
