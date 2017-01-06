@@ -12,6 +12,7 @@ $.ajax({
 
 		var template = $('#render1').html();
 		var rendered = Mustache.render(template, {data:result});
+		console.log(rendered);
 		$('#render1').html(rendered);
 	}
 });
