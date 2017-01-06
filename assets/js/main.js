@@ -10,8 +10,8 @@ $.ajax({
 		result.percent = result.collectedAmount/result.totalAmount*100;
 		result.percent = result.percent.toFixed(2);
 
-		var template = $('#header').html();
+		var template = $('#render1').html();
 		var rendered = Mustache.render(template, {data:result});
-		$('#header').html(rendered);
+		$('#render1').html(rendered);
 	}
 });
