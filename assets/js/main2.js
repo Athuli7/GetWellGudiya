@@ -12,7 +12,7 @@ $.ajax({
 		result.hours = ( (Date.now()/1000) - result.eventTime )/3600;
 		var ttR = ['#render1']
 		for(var ttr in ttR){
-			var template = $(ttr).html();
+			var template = $(ttR[ttr]).html();
 			var rendered = Mustache.render(template, {data:result});
 			console.log(rendered);
 			$(ttr).html(rendered);
