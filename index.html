@@ -28,31 +28,19 @@
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-	
-	<!--Google Analytics-->
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-12345678-9', 'auto');
-		ga('send', 'pageview');
-
-	</script>
 </head>
-<body>
+<body class="#contentr">
 	<!--header-->
 	<header class="header">
 		<div class="container">
 			<div class="row">
 				<div class="goal-summary pull-left">
 					<div class="backers">
-						<h3>103</h3>
-						<span>people helped</span>
+						<h3>{{data.collectionsMade}}</h3>
+						<span>contributions made.</span>
 					</div>
 					<div class="funded">
-						<h3>$10,350</h3>
+						<h3>₹10,350</h3>
 						<span>recieved with thanks</span>
 					</div>
 					<div class="time-left">
@@ -82,7 +70,7 @@
 								<iframe src="https://player.vimeo.com/video/67938315" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 							</div>
 							<p>Launch will enable you be in run  your own crowdfunding campaign, and be in complete control from concept to crowdfunding to launch.</p>
-							<h2>$10,350</h2>							
+							<h2>₹10,350</h2>							
 							<span class="contribution">raised by <strong>5,234</strong> ready to launch</span>
 							<div class="progress">
 								<div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
@@ -189,7 +177,7 @@
 	<!-- Global jQuery -->
 	<script type="text/javascript" src="assets/js/jquery-1.12.3.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	
+	<script type="text/javascript" src="assets/js/mustache.js"></script>	
 	<!-- Template JS -->
 	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
