@@ -83,19 +83,17 @@
 							</div>
 							<span class="goal-progress"><strong>{{data.percent}}%</strong> of ₹{{data.totalAmount}} contributed</span>
 						</div>
-						<span class="count-down"><strong>27</strong>Days to go.</span>
-						<a href="#" class="btn btn-launch">HELP LAUNCH</a>
+						<!--<span class="count-down"><strong>27</strong>Days to go.</span>-->
+						<a href="#" class="btn btn-launch">Help Us.</a>
 					</div>
-					<!--signup-->
+					<!--signup
 					<div class="section-block signup">
 						<div class="sign-up-form">
-							<form>
-								<p>Sign up now for updates and a chance to win a free version of launch!</p>
+								<p>Sign up for updates!</p>
 								<input class="signup-input" type="text" name="email" placeholder="Email Address"><button class="btn btn-signup" type="submit"><i class="fa fa-paper-plane"></i></button>
-							</form>
 						</div>
 					</div>
-					<!--/signup-->
+					signup-->
 					<!--tabs-->
 					<div class="section-block">
 						<div class="section-tabs">
@@ -111,30 +109,25 @@
 						<div class="tab-content">
 							<div role="tabpanel" class="tab-pane active" id="about">
 								<div class="about-information">
-									<h1 class="section-title">ABOUT LAUNCH</h1>
-									<p>Suspendisse luctus at massa sit amet bibendum. Cras commodo congue urna, vel dictum velit bibendum eget. Vestibulum quis risus euismod, facilisis lorem nec, dapibus leo. Quisque sodales eget dolor iaculis dapibus. Vivamus sit amet lacus ipsum. Nullam varius lobortis neque, et efficitur lacus. Quisque dictum tellus nec mi luctus imperdiet. Morbi vel aliquet velit, accumsan dapibus urna. Cras ligula orci, suscipit id eros non, rhoncus efficitur nisi.</p>
-									<p>Quisque fermentum blandit ex at commodo. Nulla facilisi. Pellentesque porttitor nisi tellus, at gravida mi interdum et. Nulla vestibulum imperdiet libero eget mattis. Vestibulum porttitor, nibh quis sagittis tincidunt, velit orci molestie magna, in congue tortor mauris sit amet eros. Nam dictum gravida tempus.</p>
+									<h1 class="section-title">About</h1>
+									<p>The tragic accident that took place in Varappuzha on 2nd January  between a bus and a car  took away the lives of two students Jijisha and Akshay  of  School of Engineering, CUSAT. The accident also left the 3 other friends, Athulya, Athira and Gudiya travelling in the same car battling for their life.  All the three girls are undergoing intensive treatment at Aster Medicity, Cochin and the medical bills are piling up to lakhs.</p>
+									<p>Out of the three, Gudiya S Lal hails from a not so strong financial background and her parents are finding it extremely hard to provide her with the best medical care. She has already underwent multiple surgeries including a  major one for spine  which alone costs more than Rs 5 lakhs. As per the doctors' advice she has to spend the another four weeks atleast in the hospital for recovery. Both her parents are tailors and are trying their best to come up with the huge amount for treatment.</p>
+									<p>The best we can do is to pray for their well being and contribute as much as we possibly can for her hospital bills.We have set up a fund raising campaign for Gudiya. The details can be found below. Every contribution, small or large, is greatly welcomed ! Let's bring her back to class.</p>
+									<strong>#TogetherWeCan</strong><br>
+									GetWellGudiya.org
 								</div>
 							</div>
 							<div role="tabpanel" class="tab-pane" id="updates">
 								<div class="update-information">
-								<h1 class="section-title">UPDATES</h1>
+								<h1 class="section-title" id="render3">Updates</h1>
 									<!--update items-->
+									{{#data.updates}}
 									<div class="update-post">
-										<h4 class="update-title">We've started shipping!</h4>
-										<span class="update-date">Posted 2 days ago</span>
-										<p>Suspendisse luctus at massa sit amet bibendum. Cras commodo congue urna, vel dictum velit bibendum eget. Vestibulum quis risus euismod, facilisis lorem nec, dapibus leo. Quisque sodales eget dolor iaculis dapibus. Vivamus sit amet lacus ipsum. Nullam varius lobortis neque, et efficitur lacus. Quisque dictum tellus nec mi luctus imperdiet. Morbi vel aliquet velit, accumsan dapibus urna. Cras ligula orci, suscipit id eros non, rhoncus efficitur nisi.</p>
+										<h4 class="update-title">{{title}}</h4>
+										<span class="update-date">{{date}}</span>
+										{{content}}
 									</div>
-									<div class="update-post">
-										<h4 class="update-title">Launch begins manufacturing </h4>
-										<span class="update-date">Posted 9 days ago</span>
-										<p>Suspendisse luctus at massa sit amet bibendum. Cras commodo congue urna, vel dictum velit bibendum eget. Vestibulum quis risus euismod, facilisis lorem nec, dapibus leo. Quisque sodales eget dolor iaculis dapibus. Vivamus sit amet lacus ipsum. Nullam varius lobortis neque, et efficitur lacus. Quisque dictum tellus nec mi luctus imperdiet. Morbi vel aliquet velit, accumsan dapibus urna. Cras ligula orci, suscipit id eros non, rhoncus efficitur nisi.</p>
-									</div>
-									<div class="update-post">
-										<h4 class="update-title">Designs have now been finalized</h4>
-										<span class="update-date">Posted 17 days ago</span>
-										<p>Suspendisse luctus at massa sit amet bibendum. Cras commodo congue urna, vel dictum velit bibendum eget. Vestibulum quis risus euismod, facilisis lorem nec, dapibus leo. Quisque sodales eget dolor iaculis dapibus. Vivamus sit amet lacus ipsum. Nullam varius lobortis neque, et efficitur lacus. Quisque dictum tellus nec mi luctus imperdiet. Morbi vel aliquet velit, accumsan dapibus urna. Cras ligula orci, suscipit id eros non, rhoncus efficitur nisi.</p>
-									</div>
+									{{/data.updates}}
 									<!--/update items-->
 								</div>
 							</div>

@@ -2,5 +2,12 @@
 	"totalAmount":800000,
 	"collectedAmount":10000,
 	"collectionsMade":108,
-	"eventTime":1483322400
+	"eventTime":1483322400,
+	"updates":[
+		{
+			"title":"The unfortunate Accident",
+			"date":"02 Jan, 2017",
+			"content":"Something"
+		}
+	]
 }
