@@ -7,7 +7,7 @@ $('#myTabs a').click(function (e) {
 $.ajax({
 	url: "stats.json",
 	success: function( result ) {
-		result.hours = ((Date.now()/1000)-result.eventTime)/3600;
+		result.hours = ( (Date.now()/1000) - result.eventTime )/3600;
 		result.percent = result.collectedAmount/result.totalAmount*100;
 		result.percent = result.percent.toFixed(2);
 		var ttR = ['#render1']
